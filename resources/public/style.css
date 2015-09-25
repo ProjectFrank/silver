@@ -1,0 +1,42 @@
+body {
+    color: #888;
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: #eee 1px solid;
+}
+
+.post {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.post .text-content {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 100px);
+}
+
+.post .text-content .title {
+    max-width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.post .thumb {
+    width: 80px;
+    height: 45px;
+    margin: 0 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hide-button {
+    color: #f00;
+    cursor: pointer;
+    margin-left: 5px;
+}

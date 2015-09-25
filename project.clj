@@ -1,6 +1,7 @@
 (defproject silver "0.1.0-SNAPSHOT"
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [org.clojure/clojurescript "0.0-3211"]
+                 [org.clojure/core.async "0.1.346.0-17112a-alpha"]
                  [reagent "0.5.0"]
                  [re-frame "0.4.1"]]
 
@@ -27,4 +28,5 @@
                         :compiler {:main silver.core
                                    :output-to "resources/public/js/compiled/app.js"
                                    :optimizations :advanced
-                                   :pretty-print false}}]})
+                                   :pretty-print false}}]}
+  :figwheel {:css-dirs ["resources/public"]})
